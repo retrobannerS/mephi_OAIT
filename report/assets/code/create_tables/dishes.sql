@@ -1,0 +1,8 @@
+CREATE TABLE dishes (
+	id SERIAL NOT NULL, 
+	title VARCHAR(100) NOT NULL, 
+	type VARCHAR(100) NOT NULL, 
+	weight FLOAT NOT NULL, 
+	colorfulness FLOAT NOT NULL, 
+	PRIMARY KEY (id)
+);

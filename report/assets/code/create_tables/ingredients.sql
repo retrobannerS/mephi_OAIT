@@ -1,0 +1,7 @@
+CREATE TABLE ingredients (
+	id SERIAL NOT NULL, 
+	title VARCHAR(100) NOT NULL, 
+	type VARCHAR(100) NOT NULL, 
+	cost FLOAT NOT NULL, 
+	PRIMARY KEY (id)
+);

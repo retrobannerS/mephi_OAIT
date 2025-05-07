@@ -1,0 +1,9 @@
+CREATE TABLE dishes_menus (
+	id SERIAL NOT NULL, 
+	dish_id INTEGER NOT NULL, 
+	menu_id INTEGER NOT NULL, 
+	date DATE DEFAULT 'now()' NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(dish_id) REFERENCES dishes (id) ON DELETE CASCADE, 
+	FOREIGN KEY(menu_id) REFERENCES menus (id) ON DELETE CASCADE
+);
